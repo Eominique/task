@@ -27,6 +27,6 @@ Date: September 8, 2021
 YouTube: **TBD**
 
 PRs:
-* GitHub Actions: https://github.com/AdamMc331/TOA/pull/27
-* Danger: https://github.com/AdamMc331/TOA/pull/29
-* 
+* GitHub Actions: https://github.com/Eominique/task/27
+* Danger: https://github.com/Eominique/task/29
+* Ktlint: https://github.com/Eominique/task/30
