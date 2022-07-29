@@ -3,11 +3,10 @@ package com.example.task.ui.components
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.material.TextButton
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.text.intl.Locale
 import androidx.compose.ui.text.toUpperCase
@@ -30,13 +29,20 @@ fun SecondaryButton(
     text: String,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
+    contentColor: Color = MaterialTheme.colors.primary,
 ) {
+
+    val buttonColors = ButtonDefaults.textButtonColors(
+        contentColor = contentColor,
+    )
+
     TextButton(
         onClick = onClick,
         shape = ButtonShape,
         modifier = modifier
             .height(dimensionResource(id = R.dimen.button_height))
             .fillMaxWidth(),
+        colors = contentColor as ButtonColors,
     ) {
         Text(
             text = text.toUpperCase(Locale.current),
