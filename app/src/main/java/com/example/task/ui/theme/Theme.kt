@@ -5,7 +5,8 @@ import androidx.compose.runtime.Composable
 
 
 @Composable
-fun TaskTheme( content: @Composable () -> Unit) {
+fun TaskTheme( content: @Composable () -> Unit
+) {
     val colors =  lightColorPalette
 
     MaterialTheme(
