@@ -26,7 +26,7 @@ import com.example.task.ui.theme.TextFieldShape
  */
 
 @Composable
-fun TOATextField(
+fun TaskTextField(
     text: String,
     onTextChanged: (String) -> Unit,
     labelText: String,
@@ -57,10 +57,10 @@ fun TOATextField(
 )
 @Composable
 @Suppress("UnusedPrivateMember")
-private fun FilledTOATextFieldPreview() {
+private fun FilledTaskTextFieldPreview() {
     TaskTheme {
         Surface {
-            TOATextField(
+            TaskTextField(
                 text = "TOA text field",
                 onTextChanged = {},
                 labelText = "Label",
@@ -79,10 +79,10 @@ private fun FilledTOATextFieldPreview() {
 )
 @Composable
 @Suppress("UnusedPrivateMember")
-private fun EmptyTOATextFieldPreview() {
+private fun EmptyTaskTextFieldPreview() {
     TaskTheme {
         Surface {
-            TOATextField(
+            TaskTextField(
                 text = "",
                 onTextChanged = {},
                 labelText = "Label",

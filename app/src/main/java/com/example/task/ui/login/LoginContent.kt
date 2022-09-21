@@ -15,10 +15,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.task.ui.components.PrimaryButton
 import com.example.task.ui.components.SecondaryButton
-import com.example.task.ui.components.TOATextField
 import com.example.task.ui.core.VerticalSpacer
 import com.example.task.ui.theme.TaskTheme
 import com.example.task.R
+import com.example.task.ui.components.TaskTextField
 
 private const val APP_LOGO_WIDTH_PERCENTAGE = 0.75F
 /**
@@ -106,7 +106,7 @@ fun PasswordInput(
     text: String,
     onTextChanged: (String) -> Unit,
 ) {
-    TOATextField(
+    TaskTextField(
         text = text,
         onTextChanged = onTextChanged,
         labelText = stringResource(R.string.password),
@@ -118,7 +118,7 @@ private fun UsernameInput(
     text: String,
     onTextChanged: (String) -> Unit,
 ) {
-    TOATextField(
+    TaskTextField(
         text = text,
         onTextChanged = onTextChanged,
         labelText = stringResource(R.string.username),
