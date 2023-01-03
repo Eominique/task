@@ -1,5 +1,6 @@
 package com.example.task.login.domain.usecase
 
+import com.example.task.login.domain.model.Credentials
 import com.example.task.login.domain.model.LoginResult
 
 @Suppress("UnusedPrivateMember")
@@ -16,7 +17,6 @@ value class Password(private val password: String)
 interface CredentialsLoginUseCase {
 
     suspend operator fun invoke(
-        email: Email,
-        password: Password,
+        credentials: Credentials,
     ): LoginResult
 }

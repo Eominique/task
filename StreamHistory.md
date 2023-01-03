@@ -3,6 +3,8 @@
 This page is a recording of all Twitch streams related to the TOA project.
 
 * [Stream One - Project Creation](#stream-one---project-creation)
+* [Stream Two - Developer Experience](#stream-two---developer-experience)
+* [Stream Three - Design System](#stream-three---design-system)
 
 ## Stream One - Project Creation
 
@@ -24,9 +26,42 @@ static analysis.
 
 Date: September 8, 2021
 
-YouTube: **TBD**
+YouTube: https://youtu.be/ePpbpLyYI1w
+
+Blog: https://androidessence.com/essential-dev-experience-concepts-android
 
 PRs:
-* GitHub Actions: https://github.com/Eominique/task/27
-* Danger: https://github.com/Eominique/task/29
-* Ktlint: https://github.com/Eominique/task/30
+* GitHub Actions: https://github.com/AdamMc331/TOA/pull/27
+* Danger: https://github.com/AdamMc331/TOA/pull/29
+* Ktlint: https://github.com/AdamMc331/TOA/pull/30
+* Detekt: https://github.com/AdamMc331/TOA/pull/31
+* Git Hooks: https://github.com/AdamMc331/TOA/pull/32
+
+## Stream Three - Design System
+
+In this stream, we setup a design system for the application. We intended to add the app logo, but
+due to classic Android Studio issues we pivoted to also including the login UI.
+
+PRs:
+* Colors: https://github.com/AdamMc331/TOA/pull/35
+* Typography: https://github.com/AdamMc331/TOA/pull/36
+* Buttons: https://github.com/AdamMc331/TOA/pull/37
+* TextField: https://github.com/AdamMc331/TOA/pull/38
+* Login UI: https://github.com/AdamMc331/TOA/pull/39
+
+Date: September 22, 2021
+
+YouTube:
+* Design System: https://youtu.be/ilNi6Pl0FI0
+* Login UI: https://youtu.be/VvILEVD5zFE
+
+## Stream Four - Login Implementation
+
+In this screen, we design the app architecture and build out the necessary components to power
+our login screen.
+
+Date: September 29, 2021
+
+PRs:
+* Use Case:
+* Repository: 

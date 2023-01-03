@@ -1,4 +1,4 @@
-package com.example.task.ui.login
+package com.example.task.login.ui
 
 import android.content.res.Configuration
 import androidx.compose.foundation.Image
@@ -13,19 +13,20 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.task.ui.components.PrimaryButton
-import com.example.task.ui.components.SecondaryButton
-import com.example.task.ui.core.VerticalSpacer
-import com.example.task.ui.theme.TaskTheme
+import com.example.task.core.ui.components.PrimaryButton
 import com.example.task.R
-import com.example.task.ui.components.TaskTextField
+import com.example.task.core.ui.components.SecondaryButton
+import com.example.task.core.ui.components.TaskTextField
+import com.example.task.core.ui.core.VerticalSpacer
+import com.example.task.core.ui.theme.TaskTheme
 
 private const val APP_LOGO_WIDTH_PERCENTAGE = 0.75F
+
 /**
  * This composable maintains the entire screen for handling user login.
  *
  * @param[viewState] The current state of the screen to render.
- * @param[onUsernameChanged] A callback invoked when the user enters their username.
+ * @param[onEmailChanged] A callback invoked when the user enters their email.
  * @param[onPasswordChanged] A callback invoked when the user enters their password.
  * @param[onLoginClicked] A callback invoked when the user clicks the login button.
  * @param[onSignUpClicked] A callback invoked when the user clicks the sign up button.
@@ -33,7 +34,7 @@ private const val APP_LOGO_WIDTH_PERCENTAGE = 0.75F
 @Composable
 fun LoginContent(
     viewState: LoginViewState,
-    onUsernameChanged: (String) -> Unit,
+    onEmailChanged: (String) -> Unit,
     onPasswordChanged: (String) -> Unit,
     onLoginClicked: () -> Unit,
     onSignUpClicked: () -> Unit,
@@ -54,9 +55,9 @@ fun LoginContent(
 
             Spacer(modifier = Modifier.weight(1F))
 
-            UsernameInput(
-                text = viewState.userName,
-                onTextChanged = onUsernameChanged,
+            EmailInput(
+                text = viewState.email,
+                onTextChanged = onEmailChanged,
             )
 
             VerticalSpacer(height = 12.dp)
@@ -114,14 +115,14 @@ fun PasswordInput(
 }
 
 @Composable
-private fun UsernameInput(
+private fun EmailInput(
     text: String,
     onTextChanged: (String) -> Unit,
 ) {
     TaskTextField(
         text = text,
         onTextChanged = onTextChanged,
-        labelText = stringResource(R.string.username),
+        labelText = stringResource(R.string.email),
     )
 }
 
@@ -147,14 +148,14 @@ private fun AppLogo() {
 @Suppress("UnusedPrivateMember")
 private fun EmptyLoginContentPreview() {
     val viewState = LoginViewState(
-        userName = "",
+        email = "",
         password = "",
     )
 
     TaskTheme {
         LoginContent(
             viewState = viewState,
-            onUsernameChanged = {},
+            onEmailChanged = {},
             onPasswordChanged = {},
             onLoginClicked = {},
             onSignUpClicked = {},

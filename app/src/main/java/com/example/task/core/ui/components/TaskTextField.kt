@@ -1,4 +1,4 @@
-package com.example.task.ui.components
+package com.example.task.core.ui.components
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -11,8 +11,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.task.R
-import com.example.task.ui.theme.TaskTheme
-import com.example.task.ui.theme.TextFieldShape
+import com.example.task.core.ui.theme.TaskTheme
+import com.example.task.core.ui.theme.TextFieldShape
 
 
 /**

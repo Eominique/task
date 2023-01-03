@@ -1,4 +1,4 @@
-package com.example.task.ui.theme
+package com.example.task.core.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
