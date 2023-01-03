@@ -1,6 +1,7 @@
 package com.example.task.core.ui.components
 
 import android.content.res.Configuration
+import android.text.BoringLayout
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.material.*
@@ -30,6 +31,7 @@ fun SecondaryButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     contentColor: Color = MaterialTheme.colors.primary,
+    enabled: Boolean = true
 ) {
 
     val buttonColors = ButtonDefaults.textButtonColors(
@@ -43,6 +45,7 @@ fun SecondaryButton(
             .height(dimensionResource(id = R.dimen.button_height))
             .fillMaxWidth(),
         colors = contentColor as ButtonColors,
+        enabled = enabled
     ) {
         Text(
             text = text.toUpperCase(Locale.current),
@@ -53,10 +56,12 @@ fun SecondaryButton(
 @Preview(
     name = "Night Mode",
     uiMode = Configuration.UI_MODE_NIGHT_YES,
+    group = "enabled"
 )
 @Preview(
     name = "Day Mode",
     uiMode = Configuration.UI_MODE_NIGHT_NO,
+    group = "enabled"
 )
 @Composable
 @Suppress("UnusedPrivateMember")
@@ -70,3 +75,28 @@ private fun SecondaryButtonPreview() {
         }
     }
 }
+
+@Preview(
+    name = "Night Mode - Disabled",
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+    group = "disabled",
+)
+@Preview(
+    name = "Day Mode - Disabled",
+    uiMode = Configuration.UI_MODE_NIGHT_NO,
+    group = "disabled",
+)
+@Composable
+@Suppress("UnusedPrivateMember")
+private fun DisabledSecondaryButtonPreview() {
+    TaskTheme {
+        Surface {
+            SecondaryButton(
+                text = "Primary button",
+                onClick = {},
+                enabled = false,
+            )
+        }
+    }
+}
+
