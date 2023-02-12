@@ -8,8 +8,6 @@ t
 Dapp/src/main/java/com/example/task/login/domain/model/LoginResult.kt,7\a\7a450dc191f4b6c69a3c462f3d7f2b2544b9b28d
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-f
-6app/src/main/java/com/example/task/core/data/Result.kt,5\c\5cd607cb26ef769caf7ac0dbd17bbdaf706e5fe5
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 :
@@ -18,17 +16,9 @@ f
 i
 9app/src/main/java/com/example/task/core/ui/theme/Color.kt,e\6\e6f1892f70beb063dd3660ed1acfec988d798921
 
-Qapp/src/test/java/com/example/task/login/domain/repository/FakeLoginRepository.kt,7\4\7425ddf1f331f3118e2346b4b1ed0795e6e2877f
-
 Qapp/src/test/java/com/example/task/login/domain/repository/FakeTokenRepository.kt,e\7\e75fd50209948cb0af6d81385fefccacb3dafb2e
 „
 Tapp/src/main/java/com/example/task/login/domain/model/InvalidCredentialsException.kt,1\d\1d8c22407c76483c2d8247a734b6253d579f5fa2
-}
-Mapp/src/main/java/com/example/task/login/domain/repository/LoginRepository.kt,1\1\11dfc8ef96d9bf5bde965b5f2827e9164d3585f9
-v
-Fapp/src/main/java/com/example/task/login/domain/model/LoginResponse.kt,a\8\a8cccdbe4f34fd24614edeac4706720f2e68c46a
-b
-2app/src/main/java/com/example/task/MainActivity.kt,c\a\ca681a59079a7e9e0b081dcd4d36ca5a3ad74e7e
 †
 Vapp/src/main/java/com/example/task/login/domain/usecase/ProdCredentialsLoginUseCase.kt,4\d\4df72b71816a296b57fbb629708a09e8c39037f1
 i
@@ -45,5 +35,13 @@ h
 8app/src/main/java/com/example/task/core/ui/theme/Type.kt,7\2\72e0fb29b9f0074aad66c0b8e27ecc1de604bd72
 q
 Aapp/src/main/java/com/example/task/core/ui/core/VerticalSpacer.kt,c\a\ca00add9cdf3c0aec36a41cfb841c538d81830f7
-Š
-Zapp/src/test/java/com/example/task/login/domain/usecase/ProdCredentialsLoginUseCaseTest.kt,9\e\9ebc45e0455c41dd0e6c8a084442f2a5d2fe4c3d
+w
+Gapp/src/main/java/com/example/task/login/domain/usecase/LoginUseCase.kt,c\c\cc894ac583bca50b32b70e7b5ffea4f6fe839b2c
+m
+=app/src/main/java/com/example/task/login/ui/LoginViewState.kt,9\4\946182727733aee64be6c2e88d6afcdd90fc8faa
+r
+Bapp/src/main/java/com/example/task/login/domain/model/LoginType.kt,3\3\33065c8087f8f86ff041759733166524b2b17eb3
+k
+;app/src/main/java/com/example/task/login/ui/LoginContent.kt,5\c\5c17b707c03d47b97530a7c7fe093bafce9f28a8
+t
+Dapp/src/main/java/com/example/task/login/domain/model/Credentials.kt,4\f\4f4886ab01d3f91a08fdae4ddc5620ffdba2b640
