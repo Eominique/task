@@ -9,6 +9,7 @@ private val fakeCredentialsLoginUseCase = FakeCredentialsLoginUseCase()
 
 private lateinit var viewModel: LoginViewModel
 private lateinit var viewModel2: LoginViewModel
+private lateinit var viewModel3: LoginViewModel
 
 
 

@@ -65,3 +65,5 @@ o
 ?app/src/test/java/com/example/task/fakes/FakeLoginRepository.kt,1\9\1953ce07c2029ba458c64b5e832e9a9ce2a38be0
 o
 ?app/src/test/java/com/example/task/fakes/FakeTokenRepository.kt,3\a\3a44349fe6e1fa12365e44c89f5a1c3397802eeb
+X
+(gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
