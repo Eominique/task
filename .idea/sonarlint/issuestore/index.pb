@@ -59,8 +59,6 @@ v
 Fapp/src/main/java/com/example/task/login/domain/model/LoginResponse.kt,a\8\a8cccdbe4f34fd24614edeac4706720f2e68c46a
 }
 Mapp/src/main/java/com/example/task/login/domain/repository/LoginRepository.kt,1\1\11dfc8ef96d9bf5bde965b5f2827e9164d3585f9
-w
-Gapp/src/test/java/com/example/task/fakes/FakeCredentialsLoginUseCase.kt,8\3\838fbb71975685300054b803baf39365e2ac236b
 o
 ?app/src/test/java/com/example/task/fakes/FakeLoginRepository.kt,1\9\1953ce07c2029ba458c64b5e832e9a9ce2a38be0
 o
