@@ -1,5 +1,6 @@
 package com.example.task.login.ui
 
+import com.example.task.core.ui.components.UIText
 import com.example.task.login.domain.model.Credentials
 
 /**
@@ -44,7 +45,7 @@ sealed class LoginViewState(
      */
     data class SubmissionError(
         override val credentials: Credentials,
-        val errorMessage: String,
+        val errorMessage: UIText,
     ) : LoginViewState(
         credentials = credentials,
     )

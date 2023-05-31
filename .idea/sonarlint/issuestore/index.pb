@@ -29,16 +29,10 @@ n
 Mapp/src/main/java/com/example/task/login/domain/repository/TokenRepository.kt,3\9\39440bf8d817aeb27f2e810f89df31b7b33212c4
 h
 8app/src/main/java/com/example/task/core/ui/theme/Type.kt,7\2\72e0fb29b9f0074aad66c0b8e27ecc1de604bd72
-q
-Aapp/src/main/java/com/example/task/core/ui/core/VerticalSpacer.kt,c\a\ca00add9cdf3c0aec36a41cfb841c538d81830f7
 w
 Gapp/src/main/java/com/example/task/login/domain/usecase/LoginUseCase.kt,c\c\cc894ac583bca50b32b70e7b5ffea4f6fe839b2c
-m
-=app/src/main/java/com/example/task/login/ui/LoginViewState.kt,9\4\946182727733aee64be6c2e88d6afcdd90fc8faa
 r
 Bapp/src/main/java/com/example/task/login/domain/model/LoginType.kt,3\3\33065c8087f8f86ff041759733166524b2b17eb3
-k
-;app/src/main/java/com/example/task/login/ui/LoginContent.kt,5\c\5c17b707c03d47b97530a7c7fe093bafce9f28a8
 t
 Dapp/src/main/java/com/example/task/login/domain/model/Credentials.kt,4\f\4f4886ab01d3f91a08fdae4ddc5620ffdba2b640
 b
@@ -65,3 +59,5 @@ o
 ?app/src/test/java/com/example/task/fakes/FakeTokenRepository.kt,3\a\3a44349fe6e1fa12365e44c89f5a1c3397802eeb
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
+q
+Aapp/src/test/java/com/example/task/login/ui/LoginViewModelTest.kt,0\1\014a8c00eac62357c9d316ebb93f1eb2a7316351

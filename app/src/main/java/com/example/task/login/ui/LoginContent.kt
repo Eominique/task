@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -22,11 +23,13 @@ import com.example.task.core.ui.components.PrimaryButton
 import com.example.task.R
 import com.example.task.core.ui.components.SecondaryButton
 import com.example.task.core.ui.components.TaskTextField
+import com.example.task.core.ui.components.UIText
 import com.example.task.core.ui.core.VerticalSpacer
 import com.example.task.core.ui.theme.TaskTheme
 import com.example.task.login.domain.model.Credentials
 import com.example.task.login.domain.model.Email
 import com.example.task.login.domain.model.Password
+import com.example.task.core.ui.components.getString
 
 private const val APP_LOGO_WIDTH_PERCENTAGE = 0.75F
 
@@ -107,7 +110,7 @@ private fun LogoInputsColumn(
 
         if (viewState is LoginViewState.SubmissionError) {
             Text(
-                text = viewState.errorMessage,
+                text = viewState.errorMessage.getString(LocalContext.current),
                 color = MaterialTheme.colors.error,
                 modifier = Modifier
                     .padding(top = 12.dp)
@@ -235,7 +238,7 @@ class LoginViewStateProvider : PreviewParameterProvider<LoginViewState> {
                 LoginViewState.Submitting(activeCredentials),
                 LoginViewState.SubmissionError(
                     credentials = activeCredentials,
-                    errorMessage = "Something went wrong.",
+                    errorMessage = UIText.StringText("Something went wrong.") ,
                 ),
                 LoginViewState.InputError(
                     credentials = activeCredentials,
