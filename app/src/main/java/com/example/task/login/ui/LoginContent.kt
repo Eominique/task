@@ -243,10 +243,10 @@ class LoginViewStateProvider : PreviewParameterProvider<LoginViewState> {
                     credentials = activeCredentials,
                     errorMessage = UIText.StringText("Something went wrong."),
                 ),
-                LoginViewState.InputError(
+                LoginViewState.Active(
                     credentials = activeCredentials,
-                    emailInputErrorMessage = "Please enter an email.",
-                    passwordInputErrorMessage = "Please enter a password",
+                    emailInputErrorMessage = UIText.StringText("Please enter an email."),
+                    passwordInputErrorMessage = UIText.StringText("Please enter a password"),
                 ),
             )
         }
