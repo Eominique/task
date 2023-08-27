@@ -4,8 +4,6 @@
 :
 
 Dangerfile,6\3\633ac3e030fe8b84293ecd824563fdb4f3fb9fa0
-t
-Dapp/src/main/java/com/example/task/login/domain/model/LoginResult.kt,7\a\7a450dc191f4b6c69a3c462f3d7f2b2544b9b28d
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -15,8 +13,6 @@ i
 Qapp/src/test/java/com/example/task/login/domain/repository/FakeTokenRepository.kt,e\7\e75fd50209948cb0af6d81385fefccacb3dafb2e
 Ñ
 Tapp/src/main/java/com/example/task/login/domain/model/InvalidCredentialsException.kt,1\d\1d8c22407c76483c2d8247a734b6253d579f5fa2
-Ü
-Vapp/src/main/java/com/example/task/login/domain/usecase/ProdCredentialsLoginUseCase.kt,4\d\4df72b71816a296b57fbb629708a09e8c39037f1
 i
 9app/src/main/java/com/example/task/core/ui/theme/Shape.kt,e\0\e07a488410b9203956e07005c8d273cab63bc512
 @
@@ -45,19 +41,17 @@ v
 Fapp/src/main/java/com/example/task/core/ui/components/TaskTextField.kt,b\b\bb66ef27b350cc8972c1cf9fc9248de2676867fc
 x
 Happ/src/main/java/com/example/task/core/ui/components/SecondaryButton.kt,c\b\cbbf449a3838ddb7e7c02fb34ff4920c449e7897
-ä
-Zapp/src/test/java/com/example/task/login/domain/usecase/ProdCredentialsLoginUseCaseTest.kt,9\e\9ebc45e0455c41dd0e6c8a084442f2a5d2fe4c3d
-Å
-Qapp/src/test/java/com/example/task/login/domain/repository/FakeLoginRepository.kt,7\4\7425ddf1f331f3118e2346b4b1ed0795e6e2877f
 v
 Fapp/src/main/java/com/example/task/login/domain/model/LoginResponse.kt,a\8\a8cccdbe4f34fd24614edeac4706720f2e68c46a
 }
 Mapp/src/main/java/com/example/task/login/domain/repository/LoginRepository.kt,1\1\11dfc8ef96d9bf5bde965b5f2827e9164d3585f9
-o
-?app/src/test/java/com/example/task/fakes/FakeLoginRepository.kt,1\9\1953ce07c2029ba458c64b5e832e9a9ce2a38be0
-o
-?app/src/test/java/com/example/task/fakes/FakeTokenRepository.kt,3\a\3a44349fe6e1fa12365e44c89f5a1c3397802eeb
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 q
 Aapp/src/test/java/com/example/task/login/ui/LoginViewModelTest.kt,0\1\014a8c00eac62357c9d316ebb93f1eb2a7316351
+w
+Gapp/src/test/java/com/example/task/fakes/FakeCredentialsLoginUseCase.kt,8\3\838fbb71975685300054b803baf39365e2ac236b
+q
+Aapp/src/main/java/com/example/task/core/ui/core/VerticalSpacer.kt,c\a\ca00add9cdf3c0aec36a41cfb841c538d81830f7
+r
+Bapp/src/test/java/com/example/task/login/ui/LoginViewModelRobot.kt,f\7\f7a32983956f2c30e5db81085bed98c029d274e6

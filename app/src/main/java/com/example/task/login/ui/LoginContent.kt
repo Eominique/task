@@ -10,7 +10,6 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -24,7 +23,7 @@ import com.example.task.R
 import com.example.task.core.ui.components.SecondaryButton
 import com.example.task.core.ui.components.TaskTextField
 import com.example.task.core.ui.components.UIText
-import com.example.task.core.ui.core.VerticalSpacer
+import com.example.task.core.ui.components.VerticalSpacer
 import com.example.task.core.ui.theme.TaskTheme
 import com.example.task.login.domain.model.Credentials
 import com.example.task.login.domain.model.Email
@@ -97,7 +96,9 @@ private fun LogoInputsColumn(
         EmailInput(
             text = viewState.credentials.email.value,
             onTextChanged = onEmailChanged,
-            errorMessage = (viewState as? LoginViewState.InputError)?.emailInputErrorMessage,
+            errorMessage = (viewState as? LoginViewState.Active)
+                ?.emailInputErrorMessage
+                ?.getString(),
         )
 
         VerticalSpacer(height = 12.dp)
@@ -105,12 +106,14 @@ private fun LogoInputsColumn(
         PasswordInput(
             text = viewState.credentials.password.value,
             onTextChanged = onPasswordChanged,
-            errorMessage = (viewState as? LoginViewState.InputError)?.passwordInputErrorMessage,
+            errorMessage = (viewState as? LoginViewState.Active)
+                ?.passwordInputErrorMessage
+                ?.getString(),
         )
 
         if (viewState is LoginViewState.SubmissionError) {
             Text(
-                text = viewState.errorMessage.getString(LocalContext.current),
+                text = viewState.errorMessage.getString(),
                 color = MaterialTheme.colors.error,
                 modifier = Modifier
                     .padding(top = 12.dp)
@@ -170,7 +173,7 @@ fun PasswordInput(
         labelText = stringResource(R.string.password),
         errorMessage = errorMessage,
         visualTransformation = PasswordVisualTransformation(),
-        )
+    )
 }
 
 @Composable
@@ -238,7 +241,7 @@ class LoginViewStateProvider : PreviewParameterProvider<LoginViewState> {
                 LoginViewState.Submitting(activeCredentials),
                 LoginViewState.SubmissionError(
                     credentials = activeCredentials,
-                    errorMessage = UIText.StringText("Something went wrong.") ,
+                    errorMessage = UIText.StringText("Something went wrong."),
                 ),
                 LoginViewState.InputError(
                     credentials = activeCredentials,

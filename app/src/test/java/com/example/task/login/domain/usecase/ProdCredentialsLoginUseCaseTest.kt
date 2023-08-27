@@ -1,9 +1,9 @@
 package com.example.task.login.domain.usecase
 
 import com.example.task.core.data.Result
+import com.example.task.fakes.FakeLoginRepository
+import com.example.task.fakes.FakeTokenRepository
 import com.example.task.login.domain.model.*
-import com.example.task.login.domain.repository.FakeLoginRepository
-import com.example.task.login.domain.repository.FakeTokenRepository
 import com.example.task.login.domain.model.Email
 import com.example.task.login.domain.model.Password
 import com.google.common.truth.Truth.assertThat
@@ -96,5 +96,26 @@ class ProdCredentialsLoginUseCaseTest {
         assertThat(result).isEqualTo(LoginResult.Failure.InvalidCredentials)
         tokenRepository.verifyNoTokenStored()
     }
+
+    @Test
+    fun testEmptyCredentialLogin() = runBlockingTest {
+val emptyCredentials = Credentials()
+
+        val useCase = ProdCredentialsLoginUseCase(
+            loginRepository = loginRepository.mock,
+            tokenRepository = tokenRepository.mock
+        )
+
+        val result = useCase(emptyCredentials)
+        assertThat(result).isEqualTo(
+            LoginResult.Failure.EmptyCredentials(
+                emptyEmail = true,
+                emptyPassword = true
+            )
+        )
+        loginRepository.verifyNoLoginCall()
+        tokenRepository.verifyNoTokenStored()
+    }
+
 }
 

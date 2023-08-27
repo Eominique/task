@@ -5,6 +5,7 @@ import com.example.task.login.domain.model.LoginResponse
 import com.example.task.login.domain.repository.LoginRepository
 import com.example.task.core.data.Result
 import io.mockk.coEvery
+import io.mockk.coVerify
 import io.mockk.mockk
 
 /**
@@ -24,5 +25,10 @@ class FakeLoginRepository {
         return result as Unit
     }
 
+    fun verifyNoLoginCall() {
+        coVerify(exactly = 0) {
+            mock.login(any())
+        }
+    }
 
 }

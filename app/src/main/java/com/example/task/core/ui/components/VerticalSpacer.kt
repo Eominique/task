@@ -1,4 +1,4 @@
-package com.example.task.core.ui.core
+package com.example.task.core.ui.components
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
