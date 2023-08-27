@@ -7,12 +7,13 @@ import com.example.task.core.data.Result
 
 import com.example.task.login.domain.repository.LoginRepository
 import com.example.task.login.domain.repository.TokenRepository
+import javax.inject.Inject
 
 /**
  * A concrete implementation of a [CredentialsLoginUseCase] that will request logging in
  * via the [loginRepository].
  */
-class ProdCredentialsLoginUseCase(
+class ProdCredentialsLoginUseCase @Inject constructor(
     private val loginRepository: LoginRepository,
     private val tokenRepository: TokenRepository,
 ) : CredentialsLoginUseCase {

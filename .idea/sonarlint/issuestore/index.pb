@@ -31,8 +31,6 @@ r
 Bapp/src/main/java/com/example/task/login/domain/model/LoginType.kt,3\3\33065c8087f8f86ff041759733166524b2b17eb3
 t
 Dapp/src/main/java/com/example/task/login/domain/model/Credentials.kt,4\f\4f4886ab01d3f91a08fdae4ddc5620ffdba2b640
-b
-2app/src/main/java/com/example/task/MainActivity.kt,c\a\ca681a59079a7e9e0b081dcd4d36ca5a3ad74e7e
 v
 Fapp/src/main/java/com/example/task/core/ui/components/PrimaryButton.kt,9\3\934276babd9d472a1862c551e540795cdb25df98
 f
@@ -43,8 +41,6 @@ x
 Happ/src/main/java/com/example/task/core/ui/components/SecondaryButton.kt,c\b\cbbf449a3838ddb7e7c02fb34ff4920c449e7897
 v
 Fapp/src/main/java/com/example/task/login/domain/model/LoginResponse.kt,a\8\a8cccdbe4f34fd24614edeac4706720f2e68c46a
-}
-Mapp/src/main/java/com/example/task/login/domain/repository/LoginRepository.kt,1\1\11dfc8ef96d9bf5bde965b5f2827e9164d3585f9
 X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 q
